@@ -1,7 +1,11 @@
 ﻿using System.Collections.Generic;
 using Entitas;
 
-//在取消暂停的时候，清掉当前帧之后的数据
+//
+
+/// <summary>
+/// 清理历史数据的系统。在取消暂停的时候，清掉当前帧之后的数据
+/// </summary>
 public class CleanupConsumtionHistorySystem : ReactiveSystem<GameEntity>
 {
     readonly GameContext _context;

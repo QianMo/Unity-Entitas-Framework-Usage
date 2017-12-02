@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using Entitas;
 
+/// <summary>
+/// 通知药品监听者的System
+/// </summary>
 public class NotifyElixirListenersSystem:ReactiveSystem<GameEntity>
 {
     readonly GameContext _context;

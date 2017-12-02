@@ -1,5 +1,8 @@
 ﻿using Entitas;
 
+/// <summary>
+/// ConsumeElixir的清理系统，对应ConsumeElixir系的所有对象
+/// </summary>
 public class ConsumeElixirCleanupSystem : ICleanupSystem
 {
     readonly GameContext _context;

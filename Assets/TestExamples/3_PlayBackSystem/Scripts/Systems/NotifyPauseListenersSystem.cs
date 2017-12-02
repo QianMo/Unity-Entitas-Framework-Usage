@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using Entitas;
-
+/// <summary>
+/// 通知暂停listener的系统
+/// </summary>
 public class NotifyPauseListenersSystem : ReactiveSystem<GameEntity>
 {
     readonly GameContext _context;

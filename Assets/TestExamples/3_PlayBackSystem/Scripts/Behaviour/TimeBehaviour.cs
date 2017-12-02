@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//继承了ITickListener，_context.GetGroup(GameMatcher.TickListener)可以获取所有继承自ITickListener的对象
 public class TimeBehaviour : MonoBehaviour, ITickListener
 {
     GameContext _context;

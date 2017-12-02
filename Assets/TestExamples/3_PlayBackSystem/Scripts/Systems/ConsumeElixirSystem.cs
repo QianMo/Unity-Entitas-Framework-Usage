@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using Entitas;
 
+/// <summary>
+/// 消耗药剂系统
+/// </summary>
 public class ConsumeElixirSystem : ReactiveSystem<GameEntity>
 {
     readonly GameContext _context; 

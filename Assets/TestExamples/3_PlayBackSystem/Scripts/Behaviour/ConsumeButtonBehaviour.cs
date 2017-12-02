@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//继承自IPauseListener，IElixirListener，经过分发会触发相关实现函数
 public class ConsumeButtonBehaviour : MonoBehaviour, IPauseListener, IElixirListener
 {
     private GameContext _context;

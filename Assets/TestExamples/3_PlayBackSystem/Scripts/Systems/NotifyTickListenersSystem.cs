@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using Entitas;
 
+/// <summary>
+/// 通知时间监听者系统
+/// </summary>
 public class NotifyTickListenersSystem : ReactiveSystem<GameEntity>
 {
     readonly GameContext _context;
@@ -9,6 +12,7 @@ public class NotifyTickListenersSystem : ReactiveSystem<GameEntity>
     public NotifyTickListenersSystem(Contexts contexts):base(contexts.game)
     {
         _context = contexts.game;
+        //listener获取所有继承自ITickListener的对象
         _listeners = _context.GetGroup(GameMatcher.TickListener);
     }
 

@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using Entitas;
 
+/// <summary>
+/// 药剂消耗留存系统
+/// </summary>
 public class ElixirConsumePersistSystem : ReactiveSystem<GameEntity>
 {
     readonly GameContext _context; 
