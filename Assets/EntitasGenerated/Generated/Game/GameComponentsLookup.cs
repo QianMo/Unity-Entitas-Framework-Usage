@@ -8,36 +8,66 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int DebugMessage = 0;
-    public const int Direction = 1;
-    public const int MoveComplete = 2;
-    public const int Move = 3;
-    public const int Mover = 4;
-    public const int Position = 5;
-    public const int Sprite = 6;
-    public const int View = 7;
+    public const int ConsumeElixir = 0;
+    public const int ConsumptionHistory = 1;
+    public const int DebugMessage = 2;
+    public const int Direction = 3;
+    public const int Elixir = 4;
+    public const int ElixirLisenter = 5;
+    public const int JumpInTime = 6;
+    public const int LogicSystem = 7;
+    public const int MoveComplete = 8;
+    public const int Move = 9;
+    public const int Mover = 10;
+    public const int Pause = 11;
+    public const int PauseListener = 12;
+    public const int Position = 13;
+    public const int Sprite = 14;
+    public const int Tick = 15;
+    public const int TickListener = 16;
+    public const int View = 17;
 
-    public const int TotalComponents = 8;
+    public const int TotalComponents = 18;
 
     public static readonly string[] componentNames = {
+        "ConsumeElixir",
+        "ConsumptionHistory",
         "DebugMessage",
         "Direction",
+        "Elixir",
+        "ElixirLisenter",
+        "JumpInTime",
+        "LogicSystem",
         "MoveComplete",
         "Move",
         "Mover",
+        "Pause",
+        "PauseListener",
         "Position",
         "Sprite",
+        "Tick",
+        "TickListener",
         "View"
     };
 
     public static readonly System.Type[] componentTypes = {
+        typeof(ConsumeElixirComponent),
+        typeof(ConsumptionHistoryComponent),
         typeof(DebugMessageComponent),
         typeof(DirectionComponent),
+        typeof(ElixirComponent),
+        typeof(ElixirLisenterComponent),
+        typeof(JumpInTimeComponent),
+        typeof(LogicSystemComponent),
         typeof(MoveCompleteComponent),
         typeof(MoveComponent),
         typeof(MoverComponent),
+        typeof(PauseComponent),
+        typeof(PauseListenerComponent),
         typeof(PositionComponent),
         typeof(SpriteComponent),
+        typeof(TickComponent),
+        typeof(TickListenerComponent),
         typeof(ViewComponent)
     };
 }
